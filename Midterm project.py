@@ -33,5 +33,5 @@ for x in os.listdir('.'):
         # draw watermark in the bottom right corner
         draw.text((x, y), text, font=font)
 
-        # we are saving new file
+        # we are saving new file like jpg
         img.save(f'img/{fn}.jpg')
