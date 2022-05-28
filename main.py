@@ -1,16 +1,36 @@
-# This is a sample Python script.
+#Import required Image library
+from PIL import Image
+from PIL import ImageDraw, ImageFont
+import os
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+files_formats = ['.jpg', '.jpeg', '.png', '.webp']
+size_1080 = (1080,1080)
 
+os.mkdir('img')
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+for x in os.listdir('.'):
+    fn, fext = os.path.splitext(x)
 
+    if fext.lower() in files_formats:
+        # Create an Image Object from an Image
+        img = Image.open(x)
+        img = img.resize(size_1080)
+        img = img.convert('L')
+        width, height = img.size
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+        # Draw a watermarker
+        draw = ImageDraw.Draw(img)
+        text = "10R"
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+        font = ImageFont.truetype('Pillow/Tests/fonts/FreeMono.ttf', 75)
+        textwidth, textheight = draw.textsize(text, font)
+
+        # calculate the x,y coordinates of the text
+        margin = 10
+        x = width - textwidth - margin
+        y = height - textheight - margin
+
+        # draw watermark in the bottom right corner
+        draw.text((x, y), text, font=font)
+
+        img.save(f'img/{fn}.jpg')
