@@ -1,31 +1,26 @@
 # Final-Project
-> Final Project from Programming Language
+> Final Project to Programming Language
 
 # What is this Project?
-> As you can see, we have written code that takes images and modifies it.
-> This is a project that changes its size to (1080, 1080) and the background color to Black and White. And at the end adds a watermark to all the images (can be an image or text) in the lower right corner, I have a watermark that is ( 10R).
+> As you can see, we have written code that show us a current weather of any place.
+> This is a project that show us current time, degree of temperature, wind, humidity, description of weather and pressure. 
 
 # Explanations 
 ## Photo 1
-![Screenshot from 2022-05-15 01-26-58](https://user-images.githubusercontent.com/99861500/168445750-f49fd263-1d26-41f2-b33c-e0fec137716f.png)
-> In Photo 1 you can see our first example.
-We took 10 images of cars( Lambo, Ferrari, Porsche ), you can take more. In the main.py file has written our main code that will do all the work.
+![Screenshot from 2022-05-30 12-51-40](https://user-images.githubusercontent.com/99861500/170934945-d683927c-1847-4bcd-8dde-f8d76ced18af.png)
+> This is a just window with a logo.
+But we need to write name of the city to see the result.
 
 ## Photo 2
-![Screenshot from 2022-05-15 00-59-16](https://user-images.githubusercontent.com/99861500/168444970-cee8e043-f0bc-4984-8c59-299400f2ad00.png)
-> In Photo 2 you see the code.
-First we imported models from Pillow(Image, ImageDraw, ImageFont) and the OS itself.
+![Screenshot from 2022-05-30 12-54-24](https://user-images.githubusercontent.com/99861500/170935355-8d668936-2e89-4122-b3c1-20af49f10bf5.png)
+> In Photo 2 we can see the result. We typed Bishkek and it gives us the result.
+> There are Current Time( 12:54 ), degrees of weather( 18° ), wind( 1.67 ), humidity( 65 ), description of weather( overcoast clouds ) and pressure( 1017 )
 
-> Then we have lists with possible endings and size.
-
-> Creating a new folder. Name is ( IMG )
-
-> We check all files to see if the end of the files matches with ours. If it matches, then change its size and background color to B/W.
-
-> At the end, we add a watermark to the bottom right corner.
-
-# Results
 ## Photo 3
-![Screenshot from 2022-05-15 01-22-51](https://user-images.githubusercontent.com/99861500/168445694-b61b895c-98d3-4259-aa44-1439d0cb096c.png)
-![Screenshot from 2022-05-15 01-23-12](https://user-images.githubusercontent.com/99861500/168445708-18a20907-6556-4d3b-aa8d-922111ec4679.png)
-> As a result, we got what we wanted. All images with a size (1080,1080), with a black and white image and a watermark (10R)
+![Screenshot from 2022-05-30 12-53-50](https://user-images.githubusercontent.com/99861500/170939000-0c1ba403-d1b1-4861-8b8a-da86da557fc6.png)
+> In Photo you can see the Error when you type wrong place( there is no such place on earth )!
+
+## Some Examples
+![Screenshot from 2022-05-30 12-54-45](https://user-images.githubusercontent.com/99861500/170939313-85103984-3a1b-4acf-946a-e9a5c9d71300.png)
+![Screenshot from 2022-05-30 12-55-03](https://user-images.githubusercontent.com/99861500/170939369-f3b02f93-b2ad-48c1-a858-7cf363957e26.png)
+![Screenshot from 2022-05-30 13-25-59](https://user-images.githubusercontent.com/99861500/170939617-ad5f0c7a-0ca2-46b5-b274-96d33b9bf035.png)
